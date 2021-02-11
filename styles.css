@@ -1,0 +1,142 @@
+main {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 30px auto 30px;
+    grid-template-areas:
+      "header"
+      "search"
+      "footer"
+  }
+  
+  header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header-right {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-left {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  a, i, button {
+    padding-right: 10px;
+  }
+  
+  header a {
+    text-decoration: none;
+    color: rgb(64	64	64);
+    font-family: sans-serif;
+    font-size: 13px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: 
+  }
+  
+  #apps {
+    color: rgb(115 115 115);
+  }
+  
+  #apps:hover {
+    color: rgb(40 39 39);
+  }
+  
+  #sign-in {
+    background: rgb(84, 129, 230);
+    color: white;
+    font-weight: 700;
+    padding: 6px 15px 6px 15px;
+    outline: none;
+    border-radius: 2px;
+    border: none;
+  }
+  
+  .search-container {
+    grid-area: search;
+    place-self: center;
+  }
+  
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .search-input {
+    width: 500px;
+    padding: 15px 30px 15px 45px;
+    outline: none;
+    border: 1px solid #dfe1e5;
+    border-radius: 50px;
+  }
+  
+  .search-input:hover, .search-input:focus {
+    transition: box shadow 0 0 2px;
+    box-shadow: 0 1px 8px -4px gray;
+  }
+  
+  #search-icon {
+    position: relative;
+    bottom: 38px;
+    left: 15px;
+  }
+  
+  #mic-icon {
+    position: relative;
+    bottom: 35px;
+    left: 500px;
+  }
+  
+  .material-icons {
+    color: #9ba0a5;
+  }
+  
+  .search-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-buttons button {
+    margin: 3px;
+    padding: 10px 12px 10px 12px;
+    background: rgb(242	242	242);
+    color: rgb(96	99	103)	;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .search-buttons button:hover {
+    border: 1px solid rgb(198 198 198); 
+    box-shadow: 0 1px 4px -4px gray;
+  }
+  
+  footer {
+    background: rgb(242,242,242);
+    border-top: 1px solid rgb(228, 228, 228);
+    margin: -7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    grid-area: footer;
+    width: 100vw;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: rgb(96, 99, 103);
+    font-family: sans-serif;
+    font-size: 13px;
+  }
